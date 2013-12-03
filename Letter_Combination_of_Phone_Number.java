@@ -1,5 +1,3 @@
-package LeetCode_practice;
-
 import java.util.ArrayList;
 
 /**
