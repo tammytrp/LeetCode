@@ -50,7 +50,7 @@ public class Generate_gray_code{
 		return result_list;	
 	} 
 	
-	// a iterative solution
+	// An iterative solution
 	ArrayList<Integer> generate_it(int n) {
 		ArrayList<Integer> result_list = new ArrayList<Integer>();
 		
