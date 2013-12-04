@@ -1,4 +1,6 @@
 public class Find_nth_element{
+	// find the kth smallest number in the array
+	
 	//------------------- partial selection sort ----------------------
 	int naive_search(int[] arr, int k) {
 		int minIndex = 0, i=0;
@@ -62,7 +64,7 @@ public class Find_nth_element{
 		
 		// loop from left to right-1, since arr[pivot] is at the right end 
 		for (int i = left; i < right; i++) {
-			if (arr[i] < arr[right]) {
+			if (arr[i] < arr[right]) {   // arr[i] > arr[right] if we were to find the kth largest
 				swap(arr, i, storeIndex);
 				storeIndex++;
 			}
