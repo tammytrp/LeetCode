@@ -8,9 +8,9 @@ public class Find_kth_in_two_sorted_arrays {
 	
 		int i=0, j=0, result=0;
 		
-		while (k>0) {
+		while (k > 0) {
 			if (i < arr1.length && j < arr2.length) {
-				result = (arr1[i] < arr2[j])?arr1[i++]:arr2[j++];
+				result = (arr1[i] < arr2[j]) ? arr1[i++] : arr2[j++];
 			} else if (i == arr1.length) {
 				result = arr2[j++];
 			} else {
@@ -31,7 +31,7 @@ public class Find_kth_in_two_sorted_arrays {
 		
 		int result = test.find_kth_in_union(arr1, arr2, k);
 		if (result < Integer.MAX_VALUE) { 
-			System.out.println("The "+k+"th element is "+result);
+			System.out.println("The "+k+"th element is "+result); //6
 		} else {
 			System.out.println("The "+k+"th element wasn't found!");
 		}
